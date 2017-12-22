@@ -13,16 +13,20 @@ class HomeComponent extends React.Component {
     super(props);
   }
 
-blurHandler(){
-
-}
+  blurHandler() {}
 
   render() {
     return (
       <main>
         <HomeSection />
         <AboutMeSection />
+        <div className="container">
+          <div class="divider" />
+        </div>
         <SkillsSection />
+        <div className="container">
+          <div class="divider" />
+        </div>
         <PortfolioSection />
         <ContactSection />
       </main>

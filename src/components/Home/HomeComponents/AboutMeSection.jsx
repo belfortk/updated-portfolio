@@ -8,13 +8,13 @@ class AboutMeSection extends React.Component {
   render() {
     return (
       <div id="about">
-        <div id='summary-row'className="row">
-          <div id="image-column" className="col m6 s12">
+        <div id="summary-row" className="row">
+          <div id="image-column" className="col m4 s12">
             <div className="circular-image">
               <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/15390648_10211684535494640_3504855358490384009_n.jpg?oh=7fc022ac083df1ea426a1cec0a78bb59&oe=5AB39DD7" />
             </div>
           </div>
-          <div id="skills" className="col m6 s12">
+          <div id="skills" className="col m8 s12">
             <h3>Hello</h3>
             <p>
               I like to build things. I'm a full-stack web developer specializing in creating websites and front-end
@@ -25,39 +25,6 @@ class AboutMeSection extends React.Component {
             </p>
           </div>
         </div>
-
-       <div className="container">
-          <div className="row">
-            <div className="skill-icon col m3 s6">
-              <h6>react</h6>
-            </div>
-            <div className="col m3 s6">
-              <h6>react</h6>
-            </div>
-            <div className="col m3 s6">
-              <h6>react</h6>
-            </div>
-            <div className="col m3 s6">
-              <h6>react</h6>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="skill-icon col m3 s6">
-              <h6>react</h6>
-            </div>
-            <div className="col m3 s6">
-              <h6>react</h6>
-            </div>
-            <div className="col m3 s6">
-              <h6>react</h6>
-            </div>
-            <div className="col m3 s6">
-              <h6>react</h6>
-            </div>
-          </div>
-       </div>
-    
       </div>
     );
   }

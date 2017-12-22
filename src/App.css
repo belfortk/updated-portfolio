@@ -77,13 +77,43 @@ margin: 10px;
   height: 100%;
   margin-left: -15px;
   }
-
-  .skill-icon{
-    width: 50px;
-    height:  50px;
-
-  }
-
+  
   #summary-row{
     margin-bottom: 1rem;
+  }
+
+  .skill-icon {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .skill-icon svg{
+    width: 75px;
+    height:  75px;
+    -webkit-animation: rocking-animation 5s infinite; /* Safari 4+ */
+    -moz-animation:    rocking-animation 5s infinite; /* Fx 5+ */
+    -o-animation:      rocking-animation 5s infinite; /* Opera 12+ */
+    animation:         rocking-animation 5s infinite; /* IE 10+, Fx 29+ */
+  }
+
+  @keyframes rocking-animation {
+    0%   { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+  .skill-icon h6{
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+  #js-icon{
+    border-radius: 20%;
+  }
+
+
+  #portfolio-section{
+    margin: 10px;
   }
