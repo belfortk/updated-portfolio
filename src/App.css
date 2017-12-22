@@ -1,0 +1,89 @@
+body {
+  /* background: #111; */
+}
+
+#hero {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #111;
+}
+
+canvas {
+  background: url("https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/12307600_10208387633194143_8849957229684255700_o.jpg?oh=fcdb58936a47226fa7ebe2f50d8b6aa9&oe=5ABAAB56");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  position: relative;
+}
+
+#hello {
+  max-width: 960px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  height: 200px;
+  margin: auto;
+  margin-top: -120px;
+  left: 0;
+  right: 0;
+  border: 1px solid #fff;
+  text-align: center;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+
+#hello > h1{
+  font-size: 4em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+#hello > h3{
+  font-size: 3em;
+  font-weight: 200;
+  margin-bottom: 7px;
+}
+
+
+#about{
+padding: 1rem;
+margin: 10px;
+}
+
+#image-column{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-image{
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #222;
+}
+
+.circular-image img{
+  width: auto;
+  height: 100%;
+  margin-left: -15px;
+  }
+
+  .skill-icon{
+    width: 50px;
+    height:  50px;
+
+  }
+
+  #summary-row{
+    margin-bottom: 1rem;
+  }

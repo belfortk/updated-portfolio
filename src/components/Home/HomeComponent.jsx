@@ -1,23 +1,37 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { Router, Link } from 'react-router-dom';
+import React from "react";
+import { connect } from "react-redux";
+import { Router, Link } from "react-router-dom";
 
-class HomeComponent extends React.Component{
-    constructor(props){
-        super(props);
-    }
+import HomeSection from "./HomeComponents/HomeSection";
+import AboutMeSection from "./HomeComponents/AboutMeSection";
+import SkillsSection from "./HomeComponents/SkillsSection";
+import PortfolioSection from "./HomeComponents/PortfolioSection";
+import ContactSection from "./HomeComponents/ContactSection";
 
-    render(){
-        return(
-            <h2>Hello World!</h2>
-        );
-    }
+class HomeComponent extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+blurHandler(){
+
 }
 
-export function mapStateToProps(store){
-    return {
+  render() {
+    return (
+      <main>
+        <HomeSection />
+        <AboutMeSection />
+        <SkillsSection />
+        <PortfolioSection />
+        <ContactSection />
+      </main>
+    );
+  }
+}
 
-    };
+export function mapStateToProps(store) {
+  return {};
 }
 
 export default connect(mapStateToProps)(HomeComponent);
