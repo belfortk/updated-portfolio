@@ -8,7 +8,7 @@ class SkillsSection extends React.Component {
   render() {
     return (
       <div id='skills-section' className="container">
-      <h4>I build with...</h4> <br/>
+      <h4>I build with:</h4> <br/>
         <div className="row">
           <div className="skill-icon col m3 s6">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">

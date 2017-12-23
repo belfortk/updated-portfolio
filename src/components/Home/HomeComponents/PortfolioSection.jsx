@@ -32,8 +32,8 @@ class PortfolioSection extends React.Component {
 
   render() {
     return (
-      <div id="portfolio-section" className="container">
-        <h4>Some of my projects</h4> <br />
+      <div id="skills-section" className="container">
+        <h4>Some of my projects:</h4> <br />
         <div>
           {this.state.projects.map(project => {
             return (
@@ -47,7 +47,7 @@ class PortfolioSection extends React.Component {
                     <i class="material-icons right">more_vert</i>
                   </span>
                   <p>
-                    <a href={project.link}>This is a link</a>
+                    <a href={project.link}>Project Page</a>
                   </p>
                 </div>
                 <div class="card-reveal">
@@ -61,7 +61,6 @@ class PortfolioSection extends React.Component {
             );
           })}
         </div>
-        <a id="home-github-link"href="https://github.com/belfortk">See more of my work on github</a>
       </div>
     );
   }

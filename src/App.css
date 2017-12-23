@@ -123,7 +123,11 @@ margin: 10px;
   }
 
 
-
+#footer-icons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 
   .portfolio-project-page{
