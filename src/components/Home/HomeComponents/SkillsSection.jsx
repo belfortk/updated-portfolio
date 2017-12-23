@@ -7,7 +7,7 @@ class SkillsSection extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div id='skills-section' className="container">
       <h4>I build with...</h4> <br/>
         <div className="row">
           <div className="skill-icon col m3 s6">

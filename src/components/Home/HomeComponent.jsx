@@ -28,6 +28,9 @@ class HomeComponent extends React.Component {
           <div class="divider" />
         </div>
         <PortfolioSection />
+        <div className="container">
+          <div class="divider" />
+        </div>
         <ContactSection />
       </main>
     );

@@ -6,7 +6,15 @@ class ContactSection extends React.Component {
   }
 
   render() {
-    return <section id="home">Say Hello!</section>;
+    return (
+      <div id="contact-section" className="container">
+        <h3>
+          Let's chat
+        </h3>
+
+        
+      </div>
+    );
   }
 }
 

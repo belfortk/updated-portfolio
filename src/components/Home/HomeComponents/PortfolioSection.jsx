@@ -8,17 +8,23 @@ class PortfolioSection extends React.Component {
         {
           image: "http://stanfordflipside.com/images/279puppies.jpg",
           title: "Project 1",
-          description:
+          description: "brief 1 sentence line",
+          summary:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa praesentium, suscipit, itaque maxime officiis fugit doloribus aliquam dolorum voluptatum impedit cum explicabo cupiditate, neque harum libero voluptate. Reprehenderit, eum beatae!",
-          link: "google.com"
+          liveLink: "google.com",
+          githubLink: "facebook.com",
+          supportingImages: []
         },
         {
           image:
             "https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/The-stages-of-puppy-growth.jpg?itok=9ptPJwY8",
           title: "Project 2",
-          description:
+          description: "brief 1 sentence line",
+          summary:
             "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa praesentium, suscipit, itaque maxime officiis fugit doloribus aliquam dolorum voluptatum impedit cum explicabo cupiditate, neque harum libero voluptate. Reprehenderit, eum beatae!",
-          link: "google.com"
+          liveLink: "google.com",
+          githubLink: "facebook.com",
+          supportingImages: []
         }
       ]
     };
@@ -26,8 +32,8 @@ class PortfolioSection extends React.Component {
 
   render() {
     return (
-      <div className="container">
-        <h4>My projects</h4> <br />
+      <div id="portfolio-section" className="container">
+        <h4>Some of my projects</h4> <br />
         <div>
           {this.state.projects.map(project => {
             return (
@@ -55,6 +61,7 @@ class PortfolioSection extends React.Component {
             );
           })}
         </div>
+        <a id="home-github-link"href="https://github.com/belfortk">See more of my work on github</a>
       </div>
     );
   }
