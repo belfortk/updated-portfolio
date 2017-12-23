@@ -1,4 +1,6 @@
 import React from "react";
+import Footer from '../Footer'
+
 
 class PortfolioItem extends React.Component {
   constructor(props) {
@@ -32,6 +34,7 @@ class PortfolioItem extends React.Component {
             <img src="" alt="" width="200" height="200" />
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

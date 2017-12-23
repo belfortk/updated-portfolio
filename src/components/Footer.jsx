@@ -42,7 +42,7 @@ class Footer extends React.Component {
             </div>
             <div class="col m4 small-screen-icon">
               <div class="column small-3 medium-2">
-                <a href="linkedin.com/in/kyle-belfort">
+                <a href="https://linkedin.com/in/kyle-belfort">
                   <svg
                     class="animated fadeInUp"
                     id="linkedin-icon"
