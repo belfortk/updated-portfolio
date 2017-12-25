@@ -7,7 +7,7 @@ import AboutMeSection from "./HomeComponents/AboutMeSection";
 import SkillsSection from "./HomeComponents/SkillsSection";
 import PortfolioSection from "./HomeComponents/PortfolioSection";
 import ContactSection from "./HomeComponents/ContactSection";
-import Footer from '../Footer';
+import Footer from "../Footer";
 
 class HomeComponent extends React.Component {
   constructor(props) {
@@ -22,15 +22,15 @@ class HomeComponent extends React.Component {
         <HomeSection />
         <AboutMeSection />
         <div className="container">
-          <div class="divider" />
+          <div className="divider" />
         </div>
         <SkillsSection />
         <div className="container">
-          <div class="divider" />
+          <div className="divider" />
         </div>
         <PortfolioSection />
         <div className="container">
-          <div class="divider" />
+          <div className="divider" />
         </div>
         <ContactSection />
         <Footer />

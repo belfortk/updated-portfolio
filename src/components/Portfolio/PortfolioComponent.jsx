@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from '../Footer'
-
+import { Link } from 'react-router-dom'
+import Footer from "../Footer";
 
 class PortfolioItem extends React.Component {
   constructor(props) {
@@ -9,15 +9,19 @@ class PortfolioItem extends React.Component {
 
   render() {
     return (
-      <div className="container portfolio-project-page">
+      <div>
+        <main>
+          <Link to="/" className='waves-effect waves-light btn'> Go Back </Link>
+        <div className="container portfolio-project-page">
         <h3>Project Title</h3>
         <p>brief description of project. 1 sentence</p>
-
-        <a href="">See it live</a> <br/>
+        <a href="">See it live</a> <br />
         <a href="">Check it out on github </a>
-        <div class="project-hero-image">
+        <div class="project-hero-image z-depth-5">
           <img src="" alt="" width="200" height="200" />
         </div>
+        <br/>
+        <br/>
         <h5>Summary</h5>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid explicabo placeat dicta repellendus omnis
@@ -34,8 +38,12 @@ class PortfolioItem extends React.Component {
             <img src="" alt="" width="200" height="200" />
           </div>
         </div>
-        <Footer />
+
       </div>
+          </main>
+          <Footer />
+      </div>
+     
     );
   }
 }

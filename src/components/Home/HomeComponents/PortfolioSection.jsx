@@ -1,33 +1,10 @@
 import React from "react";
+import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 class PortfolioSection extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      projects: [
-        {
-          image: "http://stanfordflipside.com/images/279puppies.jpg",
-          title: "Project 1",
-          description: "brief 1 sentence line",
-          summary:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa praesentium, suscipit, itaque maxime officiis fugit doloribus aliquam dolorum voluptatum impedit cum explicabo cupiditate, neque harum libero voluptate. Reprehenderit, eum beatae!",
-          liveLink: "google.com",
-          githubLink: "facebook.com",
-          supportingImages: []
-        },
-        {
-          image:
-            "https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/The-stages-of-puppy-growth.jpg?itok=9ptPJwY8",
-          title: "Project 2",
-          description: "brief 1 sentence line",
-          summary:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa praesentium, suscipit, itaque maxime officiis fugit doloribus aliquam dolorum voluptatum impedit cum explicabo cupiditate, neque harum libero voluptate. Reprehenderit, eum beatae!",
-          liveLink: "google.com",
-          githubLink: "facebook.com",
-          supportingImages: []
-        }
-      ]
-    };
   }
 
   render() {
@@ -35,27 +12,31 @@ class PortfolioSection extends React.Component {
       <div id="skills-section" className="container">
         <h4>Some of my projects:</h4> <br />
         <div>
-          {this.state.projects.map(project => {
+          {this.props.store.projects.map(project => {
             return (
-              <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src={project.image} />
+              <div className="card hoverable">
+                <div className="card-image waves-effect waves-block waves-light">
+                  <img className="activator" src={project.image} />
                 </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">
+                <div className="card-content">
+                  <span className="card-title activator grey-text text-darken-4">
                     {project.title}
-                    <i class="material-icons right">more_vert</i>
+                    <i className="material-icons right">more_vert</i>
                   </span>
                   <p>
-                    <a href={project.link}>Project Page</a>
+                    <Link to="/portfolio-sample">Project Page</Link>
                   </p>
                 </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">
+                <div className="card-reveal">
+                  <span className="card-title white-text">
                     {project.title}
-                    <i class="material-icons right">close</i>
+                    <i className="material-icons right">close</i>
                   </span>
                   <p>{project.description}</p>
+
+                  <Link to="/portfolio-sample" className="waves-effect waves-light btn">
+                      <i className="material-icons right">navigate_next</i>See more
+                  </Link>
                 </div>
               </div>
             );
@@ -66,4 +47,10 @@ class PortfolioSection extends React.Component {
   }
 }
 
-export default PortfolioSection;
+function mapStateToProps(store) {
+  return {
+    store: store.home
+  };
+}
+
+export default connect(mapStateToProps)(PortfolioSection);
