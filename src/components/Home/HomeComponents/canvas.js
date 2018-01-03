@@ -169,15 +169,19 @@ function Constellation (canvas) {
 	};
 
 	this.bind = function() {
+		console.log(window);
 		window
 			.addEventListener('mousemove', this.handlers.window.mousemove)
 			.addEventListener('resize', this.handlers.window.resize.bind(this));
+			console.log('bind has run');
 	};
 
 	this.unbind = function() {
 		window
 			.addEventListener('mousemove', this.handlers.window.mousemove)
 			.addEventListener('resize', this.handlers.window.resize);
+
+			console.log('unbind has run');
 	}
 
 	this.init = function () {
@@ -185,7 +189,7 @@ function Constellation (canvas) {
 		this.setContext();
 		this.setInitialPosition();
 		this.loop(this.createStars);
-		//this.bind();
+		// this.bind();
 	};
 }
 

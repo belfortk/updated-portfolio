@@ -1,9 +1,6 @@
 import React from "react";
 
 class AboutMeSection extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (
@@ -12,7 +9,7 @@ class AboutMeSection extends React.Component {
           <div id="image-column" className="col m4 s12">
             <div className="circular-image">
             <a href="https://linkedin.com/in/kyle-belfort">
-              <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/15390648_10211684535494640_3504855358490384009_n.jpg?oh=7fc022ac083df1ea426a1cec0a78bb59&oe=5AB39DD7" />
+              <img alt="headshot of kyle belfort" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/15390648_10211684535494640_3504855358490384009_n.jpg?oh=7fc022ac083df1ea426a1cec0a78bb59&oe=5AB39DD7" />
             </a>
             </div>
           </div>

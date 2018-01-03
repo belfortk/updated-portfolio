@@ -1,20 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Footer from "../Footer";
 
 class PortfolioItem extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (
       <div>
         <main>
-          {/* <Link to="/" className="waves-effect waves-light btn">
-
-            Go Back
-          </Link> */}
           <div className="container portfolio-project-page">
             <h3> {this.props.title}</h3>
             <p> {this.props.description}</p>
@@ -23,7 +15,7 @@ class PortfolioItem extends React.Component {
 : <p style={{"position": "absolute", "top": 0, "right": 0, "border": 0, "marginRight": "1rem" }}>Sorry, this is a private repo! </p>}
 
             <div className="project-hero-image z-depth-5">
-              <img className="responsive-img" src={this.props.heroImg} alt="project hero image" />
+              <img className="responsive-img" src={this.props.heroImg} alt="project hero screenshot" />
             </div>
             <br />
             <br />

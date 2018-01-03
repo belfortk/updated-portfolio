@@ -2,19 +2,20 @@ import React from "react";
 import CanvasConstellation from './canvas';
 import startCanvas from "./canvas";
 
+import particleCanvas from 'canvas-particle-network'
+
 class HomeSection extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+
   
   componentDidMount(){
     CanvasConstellation(document.getElementById('hero-canvas'));
+    // startCanvas();
   }
 
   render() {
     return (
       <div id="hero">
-        <canvas id="hero-canvas"></canvas>
+        <canvas id="hero-canvas" data-paper-resize="true"></canvas>
 
         <div id='hello'>
             <h1>I'm Kyle Belfort</h1>

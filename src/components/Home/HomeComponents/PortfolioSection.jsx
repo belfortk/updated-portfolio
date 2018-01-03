@@ -3,20 +3,17 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
 class PortfolioSection extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (
       <div id="skills-section" className="container">
         <h4>Some of my projects:</h4> <br />
         <div id="project-cards">
-          {this.props.store.projects.map(project => {
+          {this.props.store.projects.map((project, i) => {
             return (
-              <div className="card hoverable">
+              <div key={i} className="card hoverable">
                 <div className="card-image waves-effect waves-block waves-light">
-                  <img className="activator" src={project.heroImg} />
+                  <img className="activator" src={project.heroImg} alt="project screenshot"/>
                 </div>
                 <div className="card-content">
                   <span className="card-title activator grey-text text-darken-4">

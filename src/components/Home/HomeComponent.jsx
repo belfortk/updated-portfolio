@@ -1,7 +1,5 @@
 import React from "react";
 import { connect } from "react-redux";
-import { Router, Link } from "react-router-dom";
-
 import HomeSection from "./HomeComponents/HomeSection";
 import AboutMeSection from "./HomeComponents/AboutMeSection";
 import SkillsSection from "./HomeComponents/SkillsSection";
@@ -10,9 +8,6 @@ import ContactSection from "./HomeComponents/ContactSection";
 import Footer from "../Footer";
 
 class HomeComponent extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (
