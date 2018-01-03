@@ -11,12 +11,12 @@ class PortfolioSection extends React.Component {
     return (
       <div id="skills-section" className="container">
         <h4>Some of my projects:</h4> <br />
-        <div>
+        <div id="project-cards">
           {this.props.store.projects.map(project => {
             return (
               <div className="card hoverable">
                 <div className="card-image waves-effect waves-block waves-light">
-                  <img className="activator" src={project.image} />
+                  <img className="activator" src={project.heroImg} />
                 </div>
                 <div className="card-content">
                   <span className="card-title activator grey-text text-darken-4">
@@ -24,7 +24,7 @@ class PortfolioSection extends React.Component {
                     <i className="material-icons right">more_vert</i>
                   </span>
                   <p>
-                    <Link to="/portfolio-sample">Project Page</Link>
+                    <Link to={`/projects/${project.url}`} >Project Page</Link>
                   </p>
                 </div>
                 <div className="card-reveal">

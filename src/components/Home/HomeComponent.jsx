@@ -14,8 +14,6 @@ class HomeComponent extends React.Component {
     super(props);
   }
 
-  blurHandler() {}
-
   render() {
     return (
       <main>
