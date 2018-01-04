@@ -31,7 +31,7 @@ class PortfolioSection extends React.Component {
                   </span>
                   <p>{project.description}</p>
 
-                  <Link to="/portfolio-sample" className="waves-effect waves-light btn">
+                  <Link to={`/projects/${project.url}`} className="waves-effect waves-light btn">
                       <i className="material-icons right">navigate_next</i>See more
                   </Link>
                 </div>
