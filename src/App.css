@@ -12,6 +12,9 @@ main {
   margin: 3rem;
 }
 
+/* Home Page */
+
+/*Hero Element */
 #hero {
   background: #111;
   display: flex;
@@ -59,6 +62,8 @@ canvas {
   margin-bottom: 7px;
 }
 
+/* About Section */
+
 #about {
   padding: 1rem;
   margin: 10px;
@@ -90,6 +95,8 @@ canvas {
   margin-bottom: 1rem;
 }
 
+/* Skill Icons */
+
 .skill-icon {
   text-align: center;
   margin-bottom: 1rem;
@@ -98,6 +105,9 @@ canvas {
 .skill-icon svg {
   width: 75px;
   height: 75px;
+}
+
+.rock:hover {
   -webkit-animation: rocking-animation 5s infinite; /* Safari 4+ */
   -moz-animation: rocking-animation 5s infinite; /* Fx 5+ */
   -o-animation: rocking-animation 5s infinite; /* Opera 12+ */
@@ -131,12 +141,13 @@ canvas {
   border-radius: 20%;
 }
 
+/* Portfolio Secion */
 #portfolio-section {
   margin: 10px;
   margin-bottom: 2rem;
 }
 
-#project-cards{
+#project-cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,19 +155,19 @@ canvas {
 }
 .card {
   margin-bottom: 3rem;
-  max-width: 80%;
+  max-width: 70%;
 }
 
 .card .card-reveal {
   opacity: 0.8;
   background: #111;
-  
 }
-.card .card-reveal :not(.btn){
+.card .card-reveal :not(.btn) {
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+/* Footer */
 .page-footer {
   background: #725ac1;
 }
@@ -172,17 +183,22 @@ canvas {
   margin-left: 20%;
 }
 
-
+/* Project Pages */
 .project-hero-image {
-  border: 1px solid black;
-  width: 500px;
-  height: 300px;
+  width: 600px;
+  height: 400px;
   margin-top: 1rem;
 }
 
 .project-hero-image img {
   max-width: 100%;
   max-height: 100%;
+  border: 1px solid black;
+  margin-top: 2rem;
+}
+
+img.responsive-img {
+  margin-top: 1rem;
 }
 
 #supporting-images-row {
@@ -190,14 +206,15 @@ canvas {
   justify-content: space-around;
 }
 
-.project-supporting-image {
+#supp-img-1 {
+  margin-left: 0;
+}
+
+.project-supporting-image img {
   margin: 1rem;
   border: 1px solid black;
   width: 500px;
   height: 200px;
-}
-
-.project-supporting-image img {
   display: block;
   border-radius: 2px 2px 0 0;
   position: relative;
@@ -207,4 +224,12 @@ canvas {
   bottom: 0;
   width: 100%;
   height: 100%;
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.03);
 }
