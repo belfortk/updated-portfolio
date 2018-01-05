@@ -35,9 +35,7 @@ class ContactSection extends React.Component {
         </a>
       </form>
     );
-
-    const thanks = <h6 style={{ marginLeft: "1rem" }}>Thanks for reaching out! I'll be in touch shortly. </h6>;
-
+    
     return (
       <div id="contact-section" className="container">
         <h4>Let's chat</h4>

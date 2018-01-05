@@ -8,24 +8,29 @@ import ContactSection from "./HomeComponents/ContactSection";
 import Footer from "../Footer";
 
 class HomeComponent extends React.Component {
-
   render() {
     return (
       <main>
         <HomeSection />
+
         <AboutMeSection />
         <div className="container">
           <div className="divider" />
         </div>
         <SkillsSection />
-        <div className="container">
+        {/* <div className="container">
           <div className="divider" />
+        </div> */}
+        <div id="content">
+          <div id="stars" />
+          <div id="stars2" />
+          <div id="stars3" />
+          <PortfolioSection />
+          {/* <div className="container">
+            <div className="divider" />
+          </div> */}
         </div>
-        <PortfolioSection />
-        <div className="container">
-          <div className="divider" />
-        </div>
-        <ContactSection />
+          <ContactSection />
         <Footer />
       </main>
     );

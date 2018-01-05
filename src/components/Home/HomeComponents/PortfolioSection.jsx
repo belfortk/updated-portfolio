@@ -7,11 +7,11 @@ class PortfolioSection extends React.Component {
   render() {
     return (
       <div id="skills-section" className="container">
-        <h4>Some of my projects:</h4> <br />
+        <h4 style={{ color: "white" }}>Some of my projects:</h4> <br />
         <div id="project-cards">
           {this.props.store.projects.map((project, i) => {
             return (
-              <div key={i} className="card hoverable">
+              <div key={i} className="card grow2 hoverable">
                 <div className="card-image waves-effect waves-block waves-light">
                   <img className="activator" src={project.heroImg} alt="project screenshot"/>
                 </div>
@@ -38,7 +38,7 @@ class PortfolioSection extends React.Component {
               </div>
             );
           })}
-          <p id="and-more-github">Check out more on my <a href="https://github.com/belfortk"> github!</a>  </p>
+          <p id="and-more-github" style={{ color: "white" }} >Check out more on my <a href="https://github.com/belfortk"> github!</a>  </p>
         </div>
       </div>
     );

@@ -63,7 +63,7 @@ export default function projects() {
     {
       title: "Weather App",
       url: "weather-app",
-      description: "A weather application. Because everyone has made a weather application.",
+      description: "A weather application. Because everyone has made a weather application",
       github: "https://github.com/belfortk/weather-app",
       liveLink: "https://kjb-weather-app.herokuapp.com/",
       summary:
