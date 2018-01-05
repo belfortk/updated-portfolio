@@ -38,6 +38,7 @@ class PortfolioSection extends React.Component {
               </div>
             );
           })}
+          <p id="and-more-github">Check out more on my <a href="https://github.com/belfortk"> github!</a>  </p>
         </div>
       </div>
     );

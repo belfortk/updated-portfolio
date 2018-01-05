@@ -23,10 +23,29 @@ class PortfolioItem extends React.Component {
                 Sorry, this is a private repo!{" "}
               </p>
             )}
-            <a href={this.props.liveLink}>
-              <img className="responsive-img z-depth-5 grow" width="600px" height="400px" src={this.props.heroImg} alt="project hero screenshot" />
-            </a>
-          
+            <div className="row">
+              <div className="col m10">
+                <a href={this.props.liveLink}>
+                  <img
+                    className="responsive-img z-depth-5 grow"
+                    width="600px"
+                    height="400px"
+                    src={this.props.heroImg}
+                    alt="project hero screenshot"
+                  />
+                </a>
+              </div>
+              <div className="col m2">
+                <div id="tech-used">
+                  <h5>Built with...</h5>
+                  <ul>
+                    {this.props.builtWith.map((tool, i) =>  <li key={i}> • { tool } </li>)
+                      }
+                    <li>and more!</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
             <br />
             <br />
             <h5>Summary</h5>

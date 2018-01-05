@@ -2,6 +2,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  -webkit-font-smoothing: antialiased;
 }
 
 main {
@@ -167,9 +168,17 @@ canvas {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+#and-more-github {
+  float: right;
+}
+
 /* Footer */
+footer {
+  width: 100vw;
+}
 .page-footer {
   background: #725ac1;
+  padding-bottom: 1rem;
 }
 
 #icon-div {
@@ -195,6 +204,10 @@ canvas {
   max-height: 100%;
   border: 1px solid black;
   margin-top: 2rem;
+}
+
+#tech-used {
+  float: right;
 }
 
 img.responsive-img {
@@ -227,7 +240,7 @@ img.responsive-img {
 }
 
 .grow {
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .grow:hover {

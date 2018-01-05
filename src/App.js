@@ -6,7 +6,7 @@ import Home from './components//Home/HomeComponent'
 import PortfolioComponent from './components/Portfolio/PortfolioComponent';
 import ProjectList from './components/ProjectList';
 import projects from './Projects/projects';
-let key = 0
+
 class App extends Component {
   render() {
     return (
@@ -17,7 +17,7 @@ class App extends Component {
           {projects().map((project, i) => {
             const path = `/projects/${project.url}`
             return (
-              <Route key={i}path={path} component={() => <PortfolioComponent {...this.props} description={project.description} title={project.title} github={project.github} liveLink={project.liveLink} summary={project.summary} heroImg={project.heroImg} supportingImg1={project.supportingImg1} supportingImg2={project.supportingImg2} />}/>
+              <Route key={i}path={path} component={() => <PortfolioComponent {...this.props} description={project.description} title={project.title} github={project.github} liveLink={project.liveLink} summary={project.summary} heroImg={project.heroImg} supportingImg1={project.supportingImg1} supportingImg2={project.supportingImg2} builtWith={project.builtWith}/>}/>
             );
           })}          
           </div>
