@@ -140,6 +140,10 @@ class SkillsSection extends React.Component {
             <h6>MySql</h6>
           </div>
         </div>
+        <p style={{float: "right"}}>
+        ...and more!
+        </p>
+        
       </div>
     );
   }

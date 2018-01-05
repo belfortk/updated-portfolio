@@ -49,6 +49,7 @@ canvas {
   z-index: 200;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  overflow: scroll;
 }
 
 #hello > h1 {
@@ -460,26 +461,6 @@ canvas {
     20px 263px #fff, 1552px 1201px #fff, 1180px 362px #fff, 338px 863px #fff, 1736px 1578px #fff, 1265px 635px #fff,
     1957px 1px #fff, 1434px 820px #fff, 650px 556px #fff, 98px 751px #fff, 725px 157px #fff;
 }
-
-/* #title {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  color: #FFF;
-  text-align: center;
-  font-family: "lato", sans-serif;
-  font-weight: 300;
-  font-size: 50px;
-  letter-spacing: 10px;
-  margin-top: -60px;
-  padding-left: 10px;
-}
-#title span {
-  background: -webkit-linear-gradient(white, #38495a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
 
 @keyframes animStar {
   from {

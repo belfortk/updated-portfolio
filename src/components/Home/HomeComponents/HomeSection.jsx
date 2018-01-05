@@ -126,8 +126,13 @@ class HomeSection extends React.Component {
         // Create Points
         function initScene(dotCount) {
         passedVal = passedVal || dotCount;
+
+        function randomIntFromInterval(min,max)
+        {
+            return Math.floor(Math.random()*(max-min+1)+min);
+        }
       
-        pointsNumber = passedVal || Math.floor(refValue.dotsNumber * (cH * cW) / refValue.surface);
+        pointsNumber = randomIntFromInterval(250,500);
         minDist = refValue.minDistBetweenDots;
       
         points = [];

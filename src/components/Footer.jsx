@@ -4,7 +4,7 @@ class Footer extends React.Component {
     return (
       <footer className="page-footer">
         <div id="footer-row" className="row">
-          <div className="col m4 s12 icon-div">
+          <div className="col s4 icon-div">
             <a href="mailto:belfortk@gmail.com">
               <div id="email-icon">
                 <svg className="animated pulse infinite" width="32" height="32" viewBox="0 0 32 32">
@@ -13,7 +13,7 @@ class Footer extends React.Component {
               </div>
             </a>
           </div>
-          <div className="col m4 s12">
+          <div className="col s4">
             <a href="https://linkedin.com/in/kyle-belfort">
               <div id="linkedin-icon">
                 <svg
@@ -28,7 +28,7 @@ class Footer extends React.Component {
               </div>
             </a>
           </div>
-          <div className="col m4 s12">
+          <div className="col s4">
             <a href="https://github.com/belfortk">
               <div id="github-icon">
                 <svg
