@@ -1,4 +1,5 @@
 import React from "react";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 class HomeSection extends React.Component {
   componentDidMount() {
     var API = (function(window, document, undefined) {
@@ -213,6 +214,7 @@ class HomeSection extends React.Component {
           <h1>I'm Kyle Belfort</h1>
           <h3>Beautifully crafting web and mobile experiences</h3>
         </div>
+
       </div>
     );
   }
