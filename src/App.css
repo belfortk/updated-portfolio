@@ -594,10 +594,14 @@ canvas {
 
 /* Footer */
 footer {
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
   width: 100vw;
+  
 }
 .page-footer {
-  background: #725ac1;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   padding-bottom: 1rem;
 }
 
