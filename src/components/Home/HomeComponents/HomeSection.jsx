@@ -1,5 +1,4 @@
 import React from "react";
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 class HomeSection extends React.Component {
   componentDidMount() {
     var API = (function(window, document, undefined) {
