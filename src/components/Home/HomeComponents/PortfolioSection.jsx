@@ -11,7 +11,7 @@ class PortfolioSection extends React.Component {
         <div id="project-cards">
           {this.props.store.projects.map((project, i) => {
             return (
-              <div key={i} className="card grow2 hoverable">
+              <div key={i} className="card hoverable hvr-pulse">
                 <div className="card-image waves-effect waves-block waves-light">
                   <img className="activator" src={project.heroImg} alt="project screenshot"/>
                 </div>
