@@ -501,6 +501,15 @@ canvas {
   margin-left: -15px;
 }
 
+.grow2 {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow2:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 1px 1px 5px #d3d3d3;
+}
+
 #summary-row {
   margin-bottom: 1rem;
   max-width: 70vw;
@@ -590,15 +599,6 @@ canvas {
 .card {
   margin-bottom: 3rem;
   max-width: 70%;
-}
-
-.grow2 {
-  transition: all 0.4s ease-in-out;
-}
-
-.grow2:hover {
-  transform: scale(1.02);
-  box-shadow: 1px 1px 1px 5px #d3d3d3;
 }
 
 .card:hover {
