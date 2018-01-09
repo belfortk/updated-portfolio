@@ -501,6 +501,7 @@ canvas {
 
 #summary-row {
   margin-bottom: 1rem;
+  max-width: 70vw;
 }
 
 /* Skill Icons */
