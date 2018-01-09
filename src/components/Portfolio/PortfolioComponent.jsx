@@ -1,14 +1,17 @@
 import React from "react";
 import Footer from "../Footer";
+import Navbar from "../ProjectNavbar";
 
 class PortfolioItem extends React.Component {
   render() {
     return (
       <div>
+       <Navbar/>
+
         <main>
           <div className="container portfolio-project-page">
             <h3> {this.props.title}</h3>
-            <p> {this.props.description}</p>
+            <p style={{ color: "#555" }}> {this.props.description}</p>
             <a href={this.props.liveLink}>See it live</a> <br />
             {this.props.github ? (
               <a href={this.props.github}>
@@ -19,7 +22,7 @@ class PortfolioItem extends React.Component {
                 />
               </a>
             ) : (
-              <p style={{ position: "absolute", top: 0, right: 0, border: 0, marginRight: "1rem" }}>
+              <p style={{ position: "absolute", top: 0, right: 0, border: 0, marginRight: "1rem", color: "white" }}>
                 Sorry, this is a private repo!{" "}
               </p>
             )}
@@ -38,9 +41,8 @@ class PortfolioItem extends React.Component {
               <div className="col m2">
                 <div id="tech-used">
                   <h5>Built with...</h5>
-                  <ul>
-                    {this.props.builtWith.map((tool, i) =>  <li key={i}> • { tool } </li>)
-                      }
+                  <ul style={{ color: "#555" }}>
+                    {this.props.builtWith.map((tool, i) => <li key={i}> • {tool} </li>)}
                     <li>and more!</li>
                   </ul>
                 </div>
@@ -49,7 +51,7 @@ class PortfolioItem extends React.Component {
             <br />
             <br />
             <h5>Summary</h5>
-            <p>{this.props.summary}</p>
+            <p style={{ lineHeight: "1.5", color: "#555" }}>{this.props.summary}</p>
             <div className="row" id="supporting-images-row">
               <div className="project-supporting-image col m5 s12" id="supp-img-1">
                 <img width="500" height="300" src={this.props.supportingImg1} alt="" />

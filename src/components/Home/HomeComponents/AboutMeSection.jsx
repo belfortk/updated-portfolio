@@ -15,7 +15,7 @@ class AboutMeSection extends React.Component {
           </div>
           <div id="hello-text" className="col m8 s12">
             <h3>Hello</h3>
-            <p>
+            <p style={{  color: "#555"}}>
               I like to build things. I'm a full-stack web developer specializing in creating websites and front-end
               engineering. I'm versed in Javascript, Java and HTML/CSS. I have experience building with front-end
               frameworks like React, Bootstrap, and Bulma, building single-page applications, and creating data
