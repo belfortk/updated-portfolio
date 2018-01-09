@@ -643,6 +643,11 @@ footer {
 }
 
 /* Project Pages */
+
+.portfolio-project-page{
+  margin-bottom: 6rem;
+}
+
 .project-hero-image {
   width: 600px;
   height: 400px;
