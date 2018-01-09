@@ -80,7 +80,7 @@ canvas {
   width: 100vw;
 }
 
-#stars {
+.stars {
   width: 1px;
   height: 1px;
   background: transparent;
@@ -203,7 +203,7 @@ canvas {
     99px 660px #fff, 1715px 1953px #fff, 946px 1695px #fff, 1160px 1604px #fff, 181px 1786px #fff;
   animation: animStar 50s linear infinite;
 }
-#stars:after {
+.stars:after {
   content: " ";
   position: absolute;
   top: 2000px;
@@ -329,7 +329,7 @@ canvas {
     99px 660px #fff, 1715px 1953px #fff, 946px 1695px #fff, 1160px 1604px #fff, 181px 1786px #fff;
 }
 
-#stars2 {
+.stars2 {
   width: 2px;
   height: 2px;
   background: transparent;
@@ -369,7 +369,7 @@ canvas {
     1102px 774px #fff, 1299px 86px #fff, 612px 1657px #fff;
   animation: animStar 100s linear infinite;
 }
-#stars2:after {
+.stars2:after {
   content: " ";
   position: absolute;
   top: 2000px;
@@ -412,7 +412,7 @@ canvas {
     1102px 774px #fff, 1299px 86px #fff, 612px 1657px #fff;
 }
 
-#stars3 {
+.stars3 {
   width: 3px;
   height: 3px;
   background: transparent;
@@ -435,7 +435,7 @@ canvas {
     1957px 1px #fff, 1434px 820px #fff, 650px 556px #fff, 98px 751px #fff, 725px 157px #fff;
   animation: animStar 150s linear infinite;
 }
-#stars3:after {
+.stars3:after {
   content: " ";
   position: absolute;
   top: 2000px;

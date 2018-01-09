@@ -5,9 +5,9 @@ class ProjectNavbar extends React.Component {
   render() {
     return (
       <nav className="project-navbar">
-        <div id="stars" />
-        <div id="stars2" />
-        <div id="stars3" />
+        <div className="stars" />
+        <div className="stars2" />
+        <div className="stars3" />
         <div className="container">
           <div className="nav-wrapper">
             <a href="/#" className="brand-logo">

@@ -22,9 +22,9 @@ class HomeComponent extends React.Component {
           <div className="divider" />
         </div> */}
         <div id="content">
-          <div id="stars" />
-          <div id="stars2" />
-          <div id="stars3" />
+          <div className="stars" />
+          <div className="stars2" />
+          <div className="stars3" />
           <PortfolioSection />
           {/* <div className="container">
             <div className="divider" />

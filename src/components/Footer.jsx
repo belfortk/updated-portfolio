@@ -3,9 +3,9 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="page-footer">
-        <div id="stars" />
-        <div id="stars2" />
-        <div id="stars3" />
+        <div className="stars" />
+        <div className="stars2" />
+        <div className="stars3" />
         <div id="footer-row" className="row">
           <div className="col s4 icon-div">
             <a href="mailto:belfortk@gmail.com">
