@@ -7,7 +7,7 @@ class Footer extends React.Component {
         <div className="stars2" />
         <div className="stars3" />
         <div id="footer-row" className="row">
-          <div className="col s4 icon-div">
+          <div className="col s3 icon-div">
             <a href="mailto:belfortk@gmail.com">
               <div id="email-icon">
                 <svg className="animated pulse infinite" width="32" height="32" viewBox="0 0 32 32" fill="#fff">
@@ -16,8 +16,15 @@ class Footer extends React.Component {
               </div>
             </a>
           </div>
-          <div className="col s4">
-            <a href="https://linkedin.com/in/kyle-belfort">
+          <div className="col s3 icon-div">
+            <a href="/KyleBelfort_Resume.pdf" target="_blank">
+              <div id="resume-icon">
+              <svg className="animated pulse infinite" width="38" height="38" fill="#fff" data-name="Layer 1" viewBox="0 0 100 125" x="0px" y="0px"><circle cx="31.65" cy="12.14" r="5.33"/><path d="M31.65,19.05c-5.81,0-10.66,5-11.82,11.59H43.47C42.31,24,37.46,19.05,31.65,19.05Z"/><path d="M48.65,30.64h29.5a1.5,1.5,0,0,0,0-3H48.65a1.5,1.5,0,0,0,0,3Z"/><path d="M21.29,39.21H78.18a1.5,1.5,0,0,0,0-3H21.29a1.5,1.5,0,0,0,0,3Z"/><path d="M21.29,47.79H78.18a1.5,1.5,0,0,0,0-3H21.29a1.5,1.5,0,0,0,0,3Z"/><path d="M78.15,58H48.65a1.5,1.5,0,0,0,0,3h29.5a1.5,1.5,0,0,0,0-3Z"/><path d="M78.15,66.8H48.65a1.5,1.5,0,1,0,0,3h29.5a1.5,1.5,0,0,0,0-3Z"/><path d="M78.15,78.06H48.65a1.5,1.5,0,0,0,0,3h29.5a1.5,1.5,0,0,0,0-3Z"/><path d="M78.15,86.88H48.65a1.5,1.5,0,1,0,0,3h29.5a1.5,1.5,0,0,0,0-3Z"/><path d="M48.65,22.07h29.5a1.5,1.5,0,0,0,0-3H48.65a1.5,1.5,0,0,0,0,3Z"/><rect x="19.83" y="57.98" width="23.64" height="11.82"/><rect x="19.83" y="78.06" width="23.64" height="11.82"/><path d="M85.66,4.05V95.95H14.34V4.05H85.66M89.71,0H10.29V100H89.71V0Z"/></svg>
+              </div>
+            </a>
+          </div>
+          <div className="col s3">
+            <a href="https://linkedin.com/in/kyle-belfort" target="_blank">
               <div id="linkedin-icon">
                 <svg
                   className="animated pulse infinite"
@@ -30,10 +37,10 @@ class Footer extends React.Component {
                   <path d="M891.2 876.7v16H886v-16h5.2zm.4-5c0 .8-.3 1.4-.8 2-.6.5-1.3.8-2.2.8-1 0-1.7-.3-2.2-.8s-.8-1.2-.8-2 .2-1.5.8-2c.6-.5 1.3-.8 2.2-.8 1 0 1.6.2 2.2.7.5.5.8 1.2.8 2zm19 12v9h-5.4v-8.5c0-1.2-.2-2-.7-2.7-.4-.6-1-1-2-1-.7 0-1.3.2-1.7.6-.5.5-.8 1-1 1.5-.2.3-.2.8-.2 1.3v9h-5.4v-10.5-5.6h5.4v2.3c0-.3.4-.6.6-1l1-.7 1.3-.7c.6-.2 1.2-.3 2-.3 1.7 0 3.2.6 4.4 1.8 1 1.4 1.6 3.2 1.6 5.6z" />
                 </svg>
               </div>
-            </a>
+            </a>       
           </div>
-          <div className="col s4">
-            <a href="https://github.com/belfortk">
+          <div className="col s3">
+            <a href="https://github.com/belfortk" target="_blank">
               <div id="github-icon">
                 <svg
                   className="animated pulse infinite octicon octicon-mark-github"
