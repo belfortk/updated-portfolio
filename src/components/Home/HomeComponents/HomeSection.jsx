@@ -211,7 +211,8 @@ class HomeSection extends React.Component {
 
         <div id="hello">
           <h1>I'm Kyle Belfort</h1>
-          <h3>Beautifully crafting web and mobile experiences</h3>
+          <h4>Creative MERN Stack developer focused on crafting solutions and delighting clients
+</h4>
         </div>
 
       </div>

@@ -122,7 +122,7 @@ class SkillsSection extends React.Component {
                 </g>
               </svg>
             </div>
-            <h6>MongDB</h6>
+            <h6>MongoDB</h6>
           </div>
           <div className="skill-icon col m3 s6">
             <div className="rock">
@@ -137,7 +137,7 @@ class SkillsSection extends React.Component {
                 />
               </svg>
             </div>
-            <h6>MySql</h6>
+            <h6>MySQL</h6>
           </div>
         </div>
         <p style={{float: "right"}}>
