@@ -3,7 +3,7 @@ export default function projects() {
     {
       title: "OCA Teletype",
       url: "oca-teletype",
-      description: "Adding Google Docs-like real-time collaboration to a code editor",
+      description: "Combining Codepen and Google Docs realtime collaboration",
       github: null,
       liveLink: "https://oca-teletype.herokuapp.com",
       summary:
