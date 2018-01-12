@@ -15,7 +15,7 @@ class ProjectNavbar extends React.Component {
 
               <svg
                 version="1.0"
-                xmlns="http://www.w3.org/2000/svg"
+                xmlns="https://www.w3.org/2000/svg"
                 width="50.000000px"
                 height="50.000000px"
                 viewBox="0 0 150.000000 150.000000"
