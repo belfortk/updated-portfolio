@@ -10,7 +10,7 @@ class ProjectNavbar extends React.Component {
         <div className="stars3" />
         <div className="container">
           <div className="nav-wrapper">
-            <a href="/#" className="brand-logo">
+            <Link to="/" className="brand-logo">
               {/* <i className="fa fa-home" style={{fontSize:"3rem"}}></i> */}
 
               <svg
@@ -33,7 +33,7 @@ class ProjectNavbar extends React.Component {
 -22 l-35 -34 0 -113 0 -113 -65 0 -65 0 0 335 0 335 65 0 65 0 0 -145z" />
                 </g>
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

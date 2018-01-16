@@ -17,14 +17,14 @@ class Footer extends React.Component {
             </a>
           </div>
           <div className="col s3 icon-div">
-            <a href="/KyleBelfort_Resume.pdf" target="_blank">
+            <a href="/KyleBelfort_Resume.pdf" target="_blank" rel="noopener noreferrer">
               <div id="resume-icon">
               <svg className="animated pulse infinite" width="38" height="38" fill="#fff" data-name="Layer 1" viewBox="0 0 100 125" x="0px" y="0px"><circle cx="31.65" cy="12.14" r="5.33"/><path d="M31.65,19.05c-5.81,0-10.66,5-11.82,11.59H43.47C42.31,24,37.46,19.05,31.65,19.05Z"/><path d="M48.65,30.64h29.5a1.5,1.5,0,0,0,0-3H48.65a1.5,1.5,0,0,0,0,3Z"/><path d="M21.29,39.21H78.18a1.5,1.5,0,0,0,0-3H21.29a1.5,1.5,0,0,0,0,3Z"/><path d="M21.29,47.79H78.18a1.5,1.5,0,0,0,0-3H21.29a1.5,1.5,0,0,0,0,3Z"/><path d="M78.15,58H48.65a1.5,1.5,0,0,0,0,3h29.5a1.5,1.5,0,0,0,0-3Z"/><path d="M78.15,66.8H48.65a1.5,1.5,0,1,0,0,3h29.5a1.5,1.5,0,0,0,0-3Z"/><path d="M78.15,78.06H48.65a1.5,1.5,0,0,0,0,3h29.5a1.5,1.5,0,0,0,0-3Z"/><path d="M78.15,86.88H48.65a1.5,1.5,0,1,0,0,3h29.5a1.5,1.5,0,0,0,0-3Z"/><path d="M48.65,22.07h29.5a1.5,1.5,0,0,0,0-3H48.65a1.5,1.5,0,0,0,0,3Z"/><rect x="19.83" y="57.98" width="23.64" height="11.82"/><rect x="19.83" y="78.06" width="23.64" height="11.82"/><path d="M85.66,4.05V95.95H14.34V4.05H85.66M89.71,0H10.29V100H89.71V0Z"/></svg>
               </div>
             </a>
           </div>
           <div className="col s3">
-            <a href="https://linkedin.com/in/kyle-belfort" target="_blank">
+            <a href="https://linkedin.com/in/kyle-belfort" target="_blank" rel="noopener noreferrer">
               <div id="linkedin-icon">
                 <svg
                   className="animated pulse infinite"
@@ -40,7 +40,7 @@ class Footer extends React.Component {
             </a>       
           </div>
           <div className="col s3">
-            <a href="https://github.com/belfortk" target="_blank">
+            <a href="https://github.com/belfortk" target="_blank" rel="noopener noreferrer">
               <div id="github-icon">
                 <svg
                   className="animated pulse infinite octicon octicon-mark-github"
