@@ -214,7 +214,7 @@ class HomeSection extends React.Component {
       // You can pass other options here, such as typing speed, back speed, etc.
       const options = {
         strings: strings,
-        typeSpeed: .000005,
+        typeSpeed: -100,
         backSpeed: 1,
         showCursor: false
       };
