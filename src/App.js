@@ -17,7 +17,7 @@ class App extends Component {
           {projects().map((project, i) => {
             const path = `/projects/${project.url}`
             return (
-              <Route key={i}path={path} component={() => <PortfolioComponent {...this.props} description={project.description} title={project.title} github={project.github} liveLink={project.liveLink} summary={project.summary} heroImg={project.heroImg} supportingImg1={project.supportingImg1} supportingImg2={project.supportingImg2} builtWith={project.builtWith}/>}/>
+              <Route key={i} path={path} component={() => <PortfolioComponent {...this.props} description={project.description} title={project.title} github={project.github} liveLink={project.liveLink} summary={project.summary} heroImg={project.heroImg} supportingImg1={project.supportingImg1} supportingImg2={project.supportingImg2} builtWith={project.builtWith}/>}/>
             );
           })}          
           </div>
