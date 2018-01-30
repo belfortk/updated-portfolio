@@ -33,6 +33,7 @@ class ContactSection extends React.Component {
         <a className="waves-effect waves-light btn">
           <input type="submit" value="Send" />
         </a>
+        <input type="hidden" name="_next" value="//crs-dev.com" />
       </form>
     );
     
