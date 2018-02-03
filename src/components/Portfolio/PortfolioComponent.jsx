@@ -12,7 +12,12 @@ class PortfolioItem extends React.Component {
           <div className="container portfolio-project-page">
             <h3> {this.props.title}</h3>
             <p style={{ color: "#555" }}> {this.props.description}</p>
-            <a href={this.props.liveLink}>See it live</a> <br />
+            {this.props.liveLink ? (
+            <a href={this.props.liveLink}>See it live</a>             
+            ) : (
+              <p>Not yet released</p>
+            )}
+            <br /> 
             {this.props.github ? (
               <a href={this.props.github}>
                 <img
@@ -51,7 +56,7 @@ class PortfolioItem extends React.Component {
             <br />
             <br />
             <h5>Summary</h5>
-            <p style={{ lineHeight: "1.5", color: "#555" }}>{this.props.summary}</p>
+            <p style={{ lineHeight: "1.5", color: "#555" }} dangerouslySetInnerHTML={{__html: this.props.summary}} />
             <div className="row" id="supporting-images-row">
               <div className="project-supporting-image col m5 s12" id="supp-img-1">
                 <img width="500" height="300" src={this.props.supportingImg1} alt="" />

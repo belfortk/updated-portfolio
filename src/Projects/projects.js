@@ -1,6 +1,21 @@
 export default function projects() {
   return [
     {
+      title: "Krillcoin Blockchain",
+      url: "krillcoin",
+      description: "Browser-based crytocurrency",
+      github: null,
+      liveLink: null,
+      summary:
+      "As part of my internship at Omni Holding, I am working on a team developing a new cryptocurrency. A fork of the Nimiq blockchain, Krillcoin is pure javascript, able to be mined in the browser, and opens the door to crypto-mining to the general public. I wrote the consumer facing views like the wallet and the mining interface. Currently developing a site so users can easily monitor and visualize the blockchain (the series of Krillcoin transactions and mining activities) and a mobile app with React Native for <a href='https://www.hodlfeed.com'>HodlFeed </a>, the premier way to keep up-to-date with the latest crypto news.<br> <br> This project was really cool. I was (still am) pretty new to cryptocurrencies and blockchain development, but I've learned a lot that wild world. Additionally, this was my first time working in a real shop with professional developers and it was cool to be to be contributing to real products. I definitely learned a lot from my lead developer. Thanks to him, I've been introduced to the whole concept of styled components like Material UI and micro-interactions. And while, there was a steep learning curve, I am definitely a better developer now and am grateful to be be a part of this amazing team.",
+      heroImg: "/images/Krillcoin/HERO.png",
+      supportingImg1: "/images/Krillcoin/supportingImage1.png",
+      supportingImg2: "/images/Krillcoin/supportingImage2.png",
+      builtWith: [
+        "React", "Redux", "Material Ui", "React Native",  "Nimiq","Loopback","MongDB"
+      ]
+    },
+    {
       title: "OCA Teletype",
       url: "oca-teletype",
       description: "Combining Codepen and Google Docs realtime collaboration",
