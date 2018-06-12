@@ -26,7 +26,7 @@ main {
 }
 
 canvas {
-  background: url("https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/12307600_10208387633194143_8849957229684255700_o.jpg?oh=fcdb58936a47226fa7ebe2f50d8b6aa9&oe=5ABAAB56");
+  background: url("./components/Home/HomeComponents/hiking_photo.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.7;
