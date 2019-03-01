@@ -27,7 +27,7 @@ class AboutMeSection extends React.Component {
               creating engaging applications that solve challenging or whimsical
               problems. Have a look at my {" "}
               <a
-                href="/KyleBelfort_Resume.pdf"
+                href="https://gist.github.com/belfortk/8537c94b969cbc60426b3c263e1ff567"
                 target="_blank"
                 rel="noopener noreferrer"
               >
