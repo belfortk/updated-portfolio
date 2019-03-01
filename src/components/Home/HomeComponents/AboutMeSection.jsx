@@ -19,7 +19,7 @@ class AboutMeSection extends React.Component {
           <div id="hello-text" className="col m8 s12">
             <h3>Hello</h3>
             <p style={{ color: "#555" }}>
-              I like to build things. I'm a full-stack developer specializing in
+              I like to build things. I'm a full-stack software engineer specializing in
               creating websites and front-end engineering. Educated as a
               biologist and trained as a data analyst. I enjoy creating engaging
               applications that solve challenging or whimsical problems. Hiker.
