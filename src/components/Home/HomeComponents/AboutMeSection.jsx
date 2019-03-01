@@ -23,9 +23,7 @@ class AboutMeSection extends React.Component {
               creating websites and front-end engineering. Educated as a
               biologist and trained as a data analyst. I enjoy creating engaging
               applications that solve challenging or whimsical problems. Hiker.
-              Volleyball player. Board game enthusiast. Tea drinker. I enjoy
-              creating engaging applications that solve challenging or whimsical
-              problems. Have a look at my {" "}
+              Volleyball player. Board game enthusiast. Tea drinker. Have a look at my {" "}
               <a
                 href="https://gist.github.com/belfortk/8537c94b969cbc60426b3c263e1ff567"
                 target="_blank"
