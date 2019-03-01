@@ -4,20 +4,31 @@ import Navbar from "../ProjectNavbar";
 
 class PortfolioItem extends React.Component {
   render() {
+    const builtWith = (
+      <div id="tech-used">
+        <h5>Built with...</h5>
+        <ul style={{ color: "#555" }}>
+          {this.props.builtWith.map((tool, i) => (
+            <li key={i}> • {tool} </li>
+          ))}
+          <li>and more!</li>
+        </ul>
+      </div>
+    );
     return (
       <div>
-       <Navbar/>
+        <Navbar />
 
         <main>
           <div className="container portfolio-project-page">
             <h3> {this.props.title}</h3>
             <p style={{ color: "#555" }}> {this.props.description}</p>
             {this.props.liveLink ? (
-            <a href={this.props.liveLink}>See it live</a>             
+              <a href={this.props.liveLink}>Check it out</a>
             ) : (
               <p>Not yet released</p>
             )}
-            <br /> 
+            <br />
             {this.props.github ? (
               <a href={this.props.github}>
                 <img
@@ -27,8 +38,17 @@ class PortfolioItem extends React.Component {
                 />
               </a>
             ) : (
-              <p style={{ position: "absolute", top: 0, right: 0, border: 0, marginRight: "1rem", color: "white" }}>
-                Sorry, this is a private repo!{" "}
+              <p
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  right: 0,
+                  border: 0,
+                  marginRight: "1rem",
+                  color: "white"
+                }}
+              >
+                Sorry, my work is in a private repo!
               </p>
             )}
             <div className="row">
@@ -43,26 +63,38 @@ class PortfolioItem extends React.Component {
                   />
                 </a>
               </div>
-              <div className="col m2">
-                <div id="tech-used">
-                  <h5>Built with...</h5>
-                  <ul style={{ color: "#555" }}>
-                    {this.props.builtWith.map((tool, i) => <li key={i}> • {tool} </li>)}
-                    <li>and more!</li>
-                  </ul>
-                </div>
-              </div>
+              {this.props.builtWith.length > 0 ? builtWith : ""}
+              <div className="col m2" />
             </div>
             <br />
             <br />
             <h5>Summary</h5>
-            <p style={{ lineHeight: "1.5", color: "#555" }} dangerouslySetInnerHTML={{__html: this.props.summary}} />
+            <p
+              style={{ lineHeight: "1.5", color: "#555" }}
+              dangerouslySetInnerHTML={{ __html: this.props.summary }}
+            />
             <div className="row" id="supporting-images-row">
-              <div className="project-supporting-image col m5 s12" id="supp-img-1">
-                <img width="500" height="300" src={this.props.supportingImg1} alt="" />
+              <div
+                className="project-supporting-image col m5 s12"
+                id="supp-img-1"
+              >
+                <img
+                  width="500"
+                  height="300"
+                  src={this.props.supportingImg1}
+                  alt=""
+                />
               </div>
-              <div className="project-supporting-image col m5 s12" id="supp-img-2">
-                <img width="500" height="300" src={this.props.supportingImg2} alt="" />
+              <div
+                className="project-supporting-image col m5 s12"
+                id="supp-img-2"
+              >
+                <img
+                  width="500"
+                  height="300"
+                  src={this.props.supportingImg2}
+                  alt=""
+                />
               </div>
             </div>
           </div>

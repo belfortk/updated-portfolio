@@ -92,7 +92,7 @@ class HomeSection extends React.Component {
         var threShould = t1 > t2 ? t1 : t2;
 
         if (distance < threShould) {
-          var opacity = 1 - distance / threShould * 1.2;
+          var opacity = 1 - (distance / threShould) * 1.2;
           ctx.strokeStyle = "rgba(255, 255,255," + opacity + ")";
 
           ctx.beginPath();
@@ -166,7 +166,10 @@ class HomeSection extends React.Component {
             new Line(
               points[i],
               points[j],
-              Math.sqrt(Math.root(points[j].x() - points[i].x()) + Math.root(points[j].y() - points[i].y()))
+              Math.sqrt(
+                Math.root(points[j].x() - points[i].x()) +
+                  Math.root(points[j].y() - points[i].y())
+              )
             );
           }
 
@@ -205,25 +208,26 @@ class HomeSection extends React.Component {
       })();
     })();
 
-    
-      // If you want to pass more options as props, simply add
-      // your desired props to this destructuring assignment.
-      const strings = ['Focused',
-      'Passionate',
-    '<i>Creative MERN stack developer devoted to crafting solutions and delighting clients</i>']
-      // You can pass other options here, such as typing speed, back speed, etc.
-      const options = {
-        strings: strings,
-        typeSpeed: -100,
-        backSpeed: 1,
-        showCursor: false
-      };
-      // this.el refers to the <span> in the render() method
-      this.typed = new Typed(this.el, options);
+    // If you want to pass more options as props, simply add
+    // your desired props to this destructuring assignment.
+    const strings = [
+      "Focused",
+      "Passionate",
+      "<p>I'm Kyle Belfort</p><i>Creative software engineer devoted to crafting solutions and delighting clients</i>"
+    ];
+    // You can pass other options here, such as typing speed, back speed, etc.
+    const options = {
+      strings: strings,
+      typeSpeed: 80,
+      backSpeed: 8,
+      showCursor: false
+    };
+    // this.el refers to the <span> in the render() method
+    this.typed = new Typed(this.el, options);
   }
 
   componentWillUnmount() {
-  	// Make sure to destroy Typed instance on unmounting
+    // Make sure to destroy Typed instance on unmounting
     // to prevent memory leaks
     this.typed.destroy();
   }
@@ -234,11 +238,12 @@ class HomeSection extends React.Component {
         <canvas id="hero-canvas" data-paper-resize="true" />
 
         <div id="hello">
-          <h1>I'm Kyle Belfort</h1>
-          <h4 ref={(el) => { this.el = el; }} >
-</h4>
+          <h4
+            ref={el => {
+              this.el = el;
+            }}
+          />
         </div>
-
       </div>
     );
   }

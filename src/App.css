@@ -10,7 +10,7 @@ main {
 }
 
 .divider {
-  margin: 3rem;
+  margin: 1.5rem;
 }
 
 /* Home Page */
@@ -49,14 +49,6 @@ canvas {
   z-index: 200;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-}
-
-#hello > h1 {
-  font-size: 4em;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 7px;
 }
 
 #hello > h4 {
@@ -523,7 +515,7 @@ canvas {
   margin-bottom: 1rem;
 }
 
-.skill-icon svg {
+.skill-icon svg,.skill-icon img{
   width: 75px;
   height: 75px;
 }
@@ -599,6 +591,10 @@ canvas {
 .card {
   margin-bottom: 3rem;
   max-width: 70%;
+}
+
+.card-image {
+  width: 750px;
 }
 
 .card:hover {

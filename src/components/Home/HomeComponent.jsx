@@ -18,17 +18,11 @@ class HomeComponent extends React.Component {
           <div className="divider" />
         </div>
         <SkillsSection />
-        {/* <div className="container">
-          <div className="divider" />
-        </div> */}
         <div id="content">
           <div className="stars" />
           <div className="stars2" />
           <div className="stars3" />
           <PortfolioSection />
-          {/* <div className="container">
-            <div className="divider" />
-          </div> */}
         </div>
           <ContactSection />
         <Footer />

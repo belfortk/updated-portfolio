@@ -1,17 +1,50 @@
 export default function projects() {
   return [
     {
+      title: "MoxiWorks",
+      url: "moxiworks",
+      description: "My current employer!",
+      github: "",
+      liveLink: "https://moxiworks.com/",
+      summary: `Pretty early on into my bootcamp, I realized I wanted to work as a software engineer in Seattle. I had visited the city one August and fell in the love with the thriving tech scene and utterly gorgeous natural beauty. After months of applying, I finally interviewed and accepted an offer at MoxiWorks, where I have been since spring 2018. MoxiWorks makes agents and brokerage more profitable by providing them with the tools they need to be successful. We have a suite a product offerings that all integrate into our fabulous platform. The projects I have been a part of are the Windermere.com redesign, our Roster product, and Moxi Engage, our best in class CRM.
+      <p> I am deeply grateful to MoxiWorks for believing in and hiring me. I was their first junior developer ever! I am truly blessed to be learning from a bunch of bad ass super intelligent and thoughtful senior engineers. I have learned <i> so much</i> since coming here. We currently use Ruby on Rails to power most of our applications with various JS frameworks on the front-end, mostly Angular and Vue, or just ERB/HAML. I have a much better understand of server-side programming compared to when I finished my program. I no longer feel like a huge fraud. Now I feel like given enough time, I could maybe possibly actually do this.</p>
+      <p>Javascript is still my favorite language, though. You never forget your first.</p>`,
+      heroImg: "/images/MoxiWorks/HERO.png",
+      supportingImg1: "/images/MoxiWorks/supportingImage1.png",
+      supportingImg2: "/images/MoxiWorks/supportingImage2.png",
+      builtWith: []
+    },
+    {
+      title: "Stop It. Git Some Help.",
+      url: "git-some-help",
+      description: "Try git commands committment free in the browser.",
+      github: "https://github.com/belfortk/stop-it-git-some-help",
+      liveLink: "https://stopitgitsomehelp.herokuapp.com/",
+      summary: `<p> Weren’t we all absolutely terrified of git and the command-line when we first started out? No? Just me? This is still a work in progress, but I have a grand plan to make it look cool and like a file editor inspired by VS Code, my editor of choice. </p> This app was suggested to me by a friend who wished there was a way to try git commands without risking his files. I found this <a href=“https://github.com/isomorphic-git/isomorphic-git”> cool project</a> that is an isomorphic implementation of git. Isomorphic basically means you can run the application on the server-side or on the client (in the browser!). I knew I wanted to resharpen my React and Redux skills since we don’t use those frameworks at my job (I’m trying my best to change that) and I thought this would be a cool project. In building this, I got to finally try out the Bulma css framework in a real application, really hammer down my understand of the new async await syntax, and try this new concept I learned about on HackerNews - using JS objects as switch statements.`,
+      heroImg: "/images/StopItGitSomeHelp/HERO.png",
+      supportingImg1: "/images/StopItGitSomeHelp/supportingImage1.png",
+      supportingImg2: "/images/StopItGitSomeHelp/supportingImage2.png",
+      builtWith: ["React", "Redux", "Bulma", "Isomorphic Git"]
+    },
+    {
       title: "Krillcoin Blockchain",
       url: "krillcoin",
       description: "Browser-based crytocurrency",
       github: null,
       liveLink: null,
       summary:
-      "As part of my internship at Omni Holding, I am working on a team developing a new cryptocurrency. A fork of the Nimiq blockchain, Krillcoin is pure javascript, able to be mined in the browser, and breaks down the expense barrier to crypto-mining. I wrote the consumer facing views like the wallet and the mining interface. Currently, I am developing a site so users can easily monitor and visualize the blockchain (the series of Krillcoin transactions and mining activities) and a mobile app with React Native for <a href='https://www.hodlfeed.com'>HodlFeed </a>, the premier way to keep up-to-date with the latest crypto news.<br> <br>This project was really cool. I was (still am) pretty new to the world of cryptocurrencies and blockchain development, but I've learned a ton so far. Additionally, this was my first time working in a real development shop with professional developers and it was so fulfilling to be contributing to real products. I definitely learned a lot from my lead developer. Thanks to him, I've been introduced to the whole concept of styled components like Material UI and micro-interactions. And while there was a steep learning curve, I am definitely a better developer than I was before and am grateful to be a part of this amazing team.",      heroImg: "/images/Krillcoin/HERO.png",
+        "As part of my internship at Omni Holding, I am working on a team developing a new cryptocurrency. A fork of the Nimiq blockchain, Krillcoin is pure javascript, able to be mined in the browser, and breaks down the expense barrier to crypto-mining. I wrote the consumer facing views like the wallet and the mining interface. Currently, I am developing a site so users can easily monitor and visualize the blockchain (the series of Krillcoin transactions and mining activities) and a mobile app with React Native for <a href='https://www.hodlfeed.com'>HodlFeed </a>, the premier way to keep up-to-date with the latest crypto news.<br> <br>This project was really cool. I was (still am) pretty new to the world of cryptocurrencies and blockchain development, but I've learned a ton so far. Additionally, this was my first time working in a real development shop with professional developers and it was so fulfilling to be contributing to real products. I definitely learned a lot from my lead developer. Thanks to him, I've been introduced to the whole concept of styled components like Material UI and micro-interactions. And while there was a steep learning curve, I am definitely a better developer than I was before and am grateful to be a part of this amazing team.",
+      heroImg: "/images/Krillcoin/HERO.png",
       supportingImg1: "/images/Krillcoin/supportingImage1.png",
       supportingImg2: "/images/Krillcoin/supportingImage2.png",
       builtWith: [
-        "React", "Redux", "Material Ui", "React Native",  "Nimiq","Loopback","MongDB"
+        "React",
+        "Redux",
+        "Material Ui",
+        "React Native",
+        "Nimiq",
+        "Loopback",
+        "MongDB"
       ]
     },
     {
@@ -26,7 +59,15 @@ export default function projects() {
       supportingImg1: "/images/OCA-Teletype/supportingImage1.png",
       supportingImg2: "/images/OCA-Teletype/supportingImage2.png",
       builtWith: [
-        "React", "Redux", "React Router", "Websocket","Socket.io","Monaco","Sharedb","Loopback","MongDB"
+        "React",
+        "Redux",
+        "React Router",
+        "Websocket",
+        "Socket.io",
+        "Monaco",
+        "Sharedb",
+        "Loopback",
+        "MongDB"
       ]
     },
     {
@@ -41,7 +82,16 @@ export default function projects() {
       supportingImg1: "/images/MealHouse/supportingImage1.png",
       supportingImg2: "/images/MealHouse/supportingImage2.png",
       builtWith: [
-        "React", "Redux", "React Router", "Google Places API","Sharedb","Loopback","MongDB", "Node", "Express", "Bootstrap"
+        "React",
+        "Redux",
+        "React Router",
+        "Google Places API",
+        "Sharedb",
+        "Loopback",
+        "MongDB",
+        "Node",
+        "Express",
+        "Bootstrap"
       ]
     },
     {
@@ -55,14 +105,13 @@ export default function projects() {
       heroImg: "/images/CodeNames/HERO.png",
       supportingImg1: "/images/CodeNames/supportingImage1.png",
       supportingImg2: "/images/CodeNames/supportingImage2.png",
-      builtWith: [
-        "React", "Bootstrap", "Java"
-      ]
+      builtWith: ["React", "Bootstrap", "Java"]
     },
     {
       title: "Movie Finder",
       url: "movie-finder",
-      description: "A React/Redux application to search through the Open Movie Database for entertainment",
+      description:
+        "A React/Redux application to search through the Open Movie Database for entertainment",
       github: "https://github.com/belfortk/movie-finder-redux",
       liveLink: "https://kjb-redux-movie-finder.herokuapp.com/#/",
       summary:
@@ -71,13 +120,18 @@ export default function projects() {
       supportingImg1: "/images/MovieFinder/supportingImage1.png",
       supportingImg2: "/images/MovieFinder/supportingImage2.png",
       builtWith: [
-        "React", "Redux", "React Router", "Open Movie Database","Bootstrap"
+        "React",
+        "Redux",
+        "React Router",
+        "Open Movie Database",
+        "Bootstrap"
       ]
     },
     {
       title: "Weather App",
       url: "weather-app",
-      description: "A weather application. Because everyone has made a weather application",
+      description:
+        "A weather application. Because everyone has made a weather application",
       github: "https://github.com/belfortk/weather-app",
       liveLink: "https://kjb-weather-app.herokuapp.com/",
       summary:
@@ -86,7 +140,11 @@ export default function projects() {
       supportingImg1: "/images/Weather-App/supportingImage1.png",
       supportingImg2: "/images/Weather-App/supportingImage2.png",
       builtWith: [
-        "React", "Redux", "React Router", "Open Weather Map API","Bootstrap"
+        "React",
+        "Redux",
+        "React Router",
+        "Open Weather Map API",
+        "Bootstrap"
       ]
     },
     {
@@ -101,7 +159,11 @@ export default function projects() {
       supportingImg1: "/images/US-Drone-Strikes/supportingImage1.png",
       supportingImg2: "/images/US-Drone-Strikes/supportingImage2.png",
       builtWith: [
-        "React", "Bootstrap", "New York Times Articles API", "Mapquest API", "Dronestream API"
+        "React",
+        "Bootstrap",
+        "New York Times Articles API",
+        "Mapquest API",
+        "Dronestream API"
       ]
     }
   ];
