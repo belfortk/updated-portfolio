@@ -13,6 +13,10 @@ main {
   margin: 1.5rem;
 }
 
+
+#root {
+  overflow: hidden;
+}
 /* Home Page */
 
 /*Hero Element */
